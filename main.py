@@ -17,6 +17,7 @@ def campers():
        input("Clic cualquier teclas [continuar]: ")
     if op==3:
        modificar_campers()
+       input("Clic cualquier teclas [continuar]: ")
 
 
 def trainers():

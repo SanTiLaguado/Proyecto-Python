@@ -67,4 +67,31 @@ def listar_campers():
         print(camper)
 
 def modificar_campers():
-    print("hola")
+    id_buscar = int(input("Ingrese el número de identificación del camper: "))
+    for camper in lista_campers:
+        if camper['identificacion'] == id_buscar:
+            print(f"ID: {camper['identificacion']}, Nombre: {camper['nombre']} {camper['apellido']}, Edad: {camper['edad']}")
+            opcion = int(input("Seleccione qué campo desea modificar:\n1. ESTADO\n2. Nombre\n3. Apellido\n4. Edad\n5.Email\n6.Telefono\n7.Direccion\n8.SALR\nIngrese el número de opción: "))
+            if opcion == 1:
+                camper['estado'] = input("Ingrese el nuevo ESTADO: ")
+            elif opcion == 2:
+                camper['nombre'] = input("Ingrese el nuevo nombre: ")
+            elif opcion == 3:
+                camper['apellido'] = input("Ingrese el nuevo apellido: ")
+            elif opcion == 4:
+                camper['edad'] = int(input("Ingrese la nueva edad: "))
+            elif opcion == 5:
+                camper['email'] = input("Ingrese el nuevo email: ")
+            elif opcion == 6:
+                camper['telefono'] = int(input("Ingrese el nuevo telefono: "))
+            elif opcion == 7:
+                camper['direccion'] = input("Ingrese la nueva direccion: ")
+            elif opcion == 8:
+                print("Saliendo")
+                break           
+            else:
+                print("Opción inválida.")
+            return
+        else:
+            print("No se encontró ningún cliente con ese número de identificación.")
+            break
