@@ -1,6 +1,6 @@
 from commons.utils import limpiar_pantalla
 from commons.menus import menu_principal,menu_trainers,menu_campers,menu_matriculas,menu_aulas,menu_reportes
-from businnes.cammpers import crear_camper,listar_campers,load_campers_json,lista_campers
+from businnes.cammpers import crear_camper,listar_campers,modificar_campers,load_campers_json,lista_campers
 
 #bootstrap
 
@@ -15,6 +15,10 @@ def campers():
     if op==2:
        listar_campers()
        input("Clic cualquier teclas [continuar]: ")
+    if op==3:
+       modificar_campers()
+
+
 def trainers():
     limpiar_pantalla()    
     op=menu_trainers()

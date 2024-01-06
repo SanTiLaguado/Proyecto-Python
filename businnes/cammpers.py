@@ -15,17 +15,28 @@ lista_campers = load_campers_json()
 
 def crear_camper():
     nombre = input("Ingrese el nombre del cliente: ")
+    apellido = input("Ingrese el apellido del cliente: ")
     edad = int(input("Ingrese la edad del cliente: "))
+    identificacion = int(input("Ingrese el numero de identificacion: "))
     email = input("Ingrese el correo electrónico del cliente: ")
     telefono = input("Ingrese el número de teléfono del cliente: ")
     direccion = input("Ingrese la dirección del cliente: ")
+    estado = input("Ingrese el estado del cliente: ")
+    print("----------- Datos del Acudiente-----------")
+    acudiente = input("Ingrese el nombre del acudiente o contacto de emergencia: ")
+    numerocont = input("Ingrese el número de teléfono del contacto: ")
 
     camper = {
         'nombre': nombre,
+        'apellido': apellido,
+        'identificacion': identificacion,
         'edad': edad,
         'email': email,
         'telefono': telefono,
-        'direccion': direccion
+        'direccion': direccion,
+        'estado': estado,
+        'acudiente': acudiente,
+        'numerocont': numerocont
     }
 
     lista_campers.append(camper)
@@ -54,3 +65,6 @@ def listar_campers():
     print("Listado de campers: ")
     for camper in lista_campers:
         print(camper)
+
+def modificar_campers():
+    print("hola")

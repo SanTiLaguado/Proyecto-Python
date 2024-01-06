@@ -26,5 +26,17 @@
     "email": "lizeth@gmail.com",
     "telefono": "xxxx",
     "direccion": "xxx"
+  },
+  {
+    "nombre": "santi",
+    "apellido": "laguis",
+    "identificacion": 1097,
+    "edad": 19,
+    "email": "santilaguis@gmail",
+    "telefono": "315479",
+    "direccion": "calle 36",
+    "estado": "Inscrito",
+    "acudiente": "clara",
+    "numerocont": "123"
   }
 ]
