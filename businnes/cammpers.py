@@ -14,14 +14,14 @@ def load_campers_json():
 lista_campers = load_campers_json()
 
 def crear_camper():
-    nombre = input("Ingrese el nombre del cliente: ")
-    apellido = input("Ingrese el apellido del cliente: ")
-    edad = int(input("Ingrese la edad del cliente: "))
+    nombre = input("Ingrese el nombre del camper: ")
+    apellido = input("Ingrese el apellido del camper: ")
+    edad = int(input("Ingrese la edad del camper: "))
     identificacion = int(input("Ingrese el numero de identificacion: "))
-    email = input("Ingrese el correo electrónico del cliente: ")
-    telefono = input("Ingrese el número de teléfono del cliente: ")
-    direccion = input("Ingrese la dirección del cliente: ")
-    estado = input("Ingrese el estado del cliente: ")
+    email = input("Ingrese el correo electrónico del camper: ")
+    telefono = input("Ingrese el número de teléfono del camper: ")
+    direccion = input("Ingrese la dirección del camper: ")
+    estado = input("Ingrese el estado del camper: ")
     print("----------- Datos del Acudiente-----------")
     acudiente = input("Ingrese el nombre del acudiente o contacto de emergencia: ")
     numerocont = input("Ingrese el número de teléfono del contacto: ")
@@ -93,5 +93,21 @@ def modificar_campers():
                 print("Opción inválida.")
             return
         else:
-            print("No se encontró ningún cliente con ese número de identificación.")
+            print("No se encontró ningún camper con ese número de identificación.")
+            break
+
+def eliminar_campers():
+    id_eliminar = int(input("Ingrese el número de identificación del camper que desea eliminar: "))
+    for camper in lista_campers:
+        if camper['identificacion'] == id_eliminar:
+            print(f"Camper Encontrado - ID: {camper['identificacion']}, Nombre: {camper['nombre']}, Apellido: {camper['apellido']}, Edad: {camper['edad']}")
+            confirmacion = input("¿Está seguro de que desea ELIMINAR ESTE CAMPER? (SI/NO): ")
+            if confirmacion.upper() == 'SI':
+                lista_campers.remove(camper)
+                print("El camper se elimino exitosamente.")
+            else:
+                print("Operación cancelada.")
+            return
+        else:
+            print("No se encontró ningún camper con ese número de identificación.")
             break
