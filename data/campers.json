@@ -1,42 +1,14 @@
 [
   {
-    "nombre": "sss",
-    "edad": 54,
-    "email": "444",
-    "telefono": "444",
-    "direccion": "44"
-  },
-  {
-    "nombre": "maria",
-    "edad": 34,
-    "email": "xxxx",
-    "telefono": "xxx",
-    "direccion": "xxx"
-  },
-  {
-    "nombre": "jose",
-    "edad": 21,
-    "email": "jose@xxx",
-    "telefono": "xxx",
-    "direccion": "xxx"
-  },
-  {
-    "nombre": "lizeth",
-    "edad": 45,
-    "email": "lizeth@gmail.com",
-    "telefono": "xxxx",
-    "direccion": "xxx"
-  },
-  {
-    "nombre": "santi",
-    "apellido": "laguis",
-    "identificacion": 1097,
-    "edad": 19,
-    "email": "santilaguis@gmail",
-    "telefono": "315479",
-    "direccion": "calle 36",
-    "estado": "Inscrito",
-    "acudiente": "clara",
-    "numerocont": "123"
+    "nombre": "laguis",
+    "apellido": "sant",
+    "identificacion": 2,
+    "edad": 1,
+    "email": "3",
+    "telefono": "4",
+    "direccion": "5",
+    "estado": "6",
+    "acudiente": "7",
+    "numerocont": "8"
   }
 ]

@@ -4,7 +4,7 @@ from businnes.cammpers import crear_camper,listar_campers,modificar_campers,load
 
 #bootstrap
 
-#hola
+
 # funtions
 def campers():      
     limpiar_pantalla()
