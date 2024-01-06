@@ -104,7 +104,7 @@ def eliminar_campers():
             confirmacion = input("¿Está seguro de que desea ELIMINAR ESTE CAMPER? (SI/NO): ")
             if confirmacion.upper() == 'SI':
                 lista_campers.remove(camper)
-                print("El camper se elimino holaaexitosamente.")
+                print("El camper se elimino exitosamente.")
             else:
                 print("Operación cancelada.")
             return
