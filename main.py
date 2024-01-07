@@ -11,16 +11,16 @@ def campers():
     op=menu_campers()
     if op==1:
        crear_camper()
-       input("Clic cualquier teclas [continuar]: ")
+       input("Pulse cualquier tecla para continuar")
     if op==2:
        listar_campers()
-       input("Clic cualquier teclas [continuar]: ")
+       input("Pulse cualquier tecla para continuar")
     if op==3:
        modificar_campers()
-       input("Clic cualquier teclas [continuar]: ")
+       input("Pulse cualquier tecla para continuar")
     if op==4:
        eliminar_campers()
-       input("Clic cualquier teclas [continuar]: ")
+       input("Pulse cualquier tecla para continuar")
 
 
 def trainers():
