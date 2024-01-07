@@ -22,5 +22,17 @@
     "estado": "INSCRITO",
     "acudiente": "clara osorio",
     "numerocont": "3154100075"
+  },
+  {
+    "nombre": "Juan Diego",
+    "apellido": "Garcia",
+    "identificacion": 1098625284,
+    "edad": 19,
+    "email": "juandiego@gmail.com",
+    "telefono": "3157853239",
+    "direccion": "Soleri Parque Residencial",
+    "estado": "INSCRITO",
+    "acudiente": "Ana",
+    "numerocont": "3150004433"
   }
 ]
