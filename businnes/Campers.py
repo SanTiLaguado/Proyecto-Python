@@ -26,12 +26,14 @@ def crear_camper():
     acudiente = input("Ingrese el nombre del acudiente o contacto de emergencia: ")
     numerocont = input("Ingrese el número de teléfono del contacto: ")
     notaprueba = 0
+    rutas = 0
 
     camper = {
         'nombre': nombre,
         'apellido': apellido,
         'identificacion': identificacion,
         'notaprueba': notaprueba,
+        'rutas': rutas,
         'edad': edad,
         'email': email,
         'telefono': telefono,

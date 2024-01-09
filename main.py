@@ -1,6 +1,7 @@
 from commons.utils import limpiar_pantalla
 from commons.menus import menu_principal,menu_trainers,menu_campers,menu_matriculas,menu_aulas,menu_reportes
-from businnes.cammpers import crear_camper,listar_campers,modificar_campers,eliminar_campers,load_campers_json,lista_campers
+from businnes.Campers import crear_camper,listar_campers,modificar_campers,eliminar_campers
+from businnes.Ruta import rutacampers
 
 #bootstrap
 
@@ -20,6 +21,9 @@ def campers():
        input("Pulse cualquier tecla para continuar")
     if op==4:
        eliminar_campers()
+       input("Pulse cualquier tecla para continuar")
+    if op==5:
+       rutacampers(campers) 
        input("Pulse cualquier tecla para continuar")
 
 
