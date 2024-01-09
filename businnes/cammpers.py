@@ -17,7 +17,7 @@ def crear_camper():
     nombre = input("Ingrese el nombre del camper: ")
     apellido = input("Ingrese el apellido del camper: ")
     edad = int(input("Ingrese la edad del camper: "))
-    identificacion = int(input("Ingrese el numero de identificacion: "))
+    identificacion = (input("Ingrese el numero de identificacion: "))
     email = input("Ingrese el correo electrónico del camper: ")
     telefono = input("Ingrese el número de teléfono del camper: ")
     direccion = input("Ingrese la dirección del camper: ")
@@ -25,11 +25,13 @@ def crear_camper():
     print("----------- Datos del Acudiente-----------")
     acudiente = input("Ingrese el nombre del acudiente o contacto de emergencia: ")
     numerocont = input("Ingrese el número de teléfono del contacto: ")
+    notaprueba = 0
 
     camper = {
         'nombre': nombre,
         'apellido': apellido,
         'identificacion': identificacion,
+        'notaprueba': notaprueba,
         'edad': edad,
         'email': email,
         'telefono': telefono,
@@ -67,26 +69,28 @@ def listar_campers():
         print(camper)
 
 def modificar_campers():
-    id_buscar = int(input("Ingrese el número de identificación del camper: "))
+    id_buscar = input("Ingrese el número de identificación del camper: ")
     for camper in lista_campers:
         if camper['identificacion'] == id_buscar:
             print(f"ID: {camper['identificacion']}, Nombre: {camper['nombre']} {camper['apellido']}, Edad: {camper['edad']}")
-            opcion = int(input("Seleccione qué campo desea modificar:\n1. ESTADO\n2. Nombre\n3. Apellido\n4. Edad\n5.Email\n6.Telefono\n7.Direccion\n8.SALR\nIngrese el número de opción: "))
+            opcion = int(input("Seleccione qué campo desea modificar:\n1. ESTADO\n2. Nota prueba ing\n3. Nombre\n4. Apellido\n5. Edad\n6.Email\n7.Telefono\n8.Direccion\n9.SALIR\nIngrese el número de opción: "))
             if opcion == 1:
                 camper['estado'] = input("Ingrese el nuevo ESTADO: ")
             elif opcion == 2:
-                camper['nombre'] = input("Ingrese el nuevo nombre: ")
+                camper['notaprueba'] = input("Ingrese la nota (Prueba de ingreso): ")
             elif opcion == 3:
-                camper['apellido'] = input("Ingrese el nuevo apellido: ")
+                camper['nombre'] = input("Ingrese el nuevo nombre: ")
             elif opcion == 4:
-                camper['edad'] = int(input("Ingrese la nueva edad: "))
+                camper['apellido'] = input("Ingrese el nuevo apellido: ")
             elif opcion == 5:
-                camper['email'] = input("Ingrese el nuevo email: ")
+                camper['edad'] = int(input("Ingrese la nueva edad: "))
             elif opcion == 6:
-                camper['telefono'] = int(input("Ingrese el nuevo telefono: "))
+                camper['email'] = input("Ingrese el nuevo email: ")
             elif opcion == 7:
-                camper['direccion'] = input("Ingrese la nueva direccion: ")
+                camper['telefono'] = int(input("Ingrese el nuevo telefono: "))
             elif opcion == 8:
+                camper['direccion'] = input("Ingrese la nueva direccion: ")
+            elif opcion == 9:
                 print("Saliendo")
                 break           
             else:
@@ -97,7 +101,7 @@ def modificar_campers():
             break
 
 def eliminar_campers():
-    id_eliminar = int(input("Ingrese el número de identificación del camper que desea eliminar: "))
+    id_eliminar = input("Ingrese el número de identificación del camper que desea eliminar: ")
     for camper in lista_campers:
         if camper['identificacion'] == id_eliminar:
             print(f"Camper Encontrado - ID: {camper['identificacion']}, Nombre: {camper['nombre']}, Apellido: {camper['apellido']}, Edad: {camper['edad']}")
@@ -108,6 +112,5 @@ def eliminar_campers():
             else:
                 print("Operación cancelada.")
             return
-        else:
-            print("No se encontró ningún camper con ese número de identificación.")
-            break
+    else:
+        print("No se encontró ningún camper con ese número de identificación.")

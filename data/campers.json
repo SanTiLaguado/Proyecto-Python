@@ -1,38 +1,15 @@
 [
   {
-    "nombre": "laguis",
-    "apellido": "sant",
-    "identificacion": 2,
-    "edad": 1,
-    "email": "3",
-    "telefono": "4",
-    "direccion": "5",
-    "estado": "6",
-    "acudiente": "7",
-    "numerocont": "8"
-  },
-  {
-    "nombre": "santiago",
-    "apellido": "laguado",
-    "identificacion": 1097489826,
+    "nombre": "Santiago",
+    "apellido": "Laguado",
+    "identificacion": "1097489826",
+    "notaprueba": 0,
     "edad": 19,
-    "email": "santiagolaguado57@gmail.com",
+    "email": "santi.gmail.com",
     "telefono": "3154797800",
-    "direccion": "calle 36 # 34-52",
+    "direccion": "calle 36",
     "estado": "INSCRITO",
     "acudiente": "clara osorio",
-    "numerocont": "3154100075"
-  },
-  {
-    "nombre": "Juan Diego",
-    "apellido": "Garcia",
-    "identificacion": 1098625284,
-    "edad": 19,
-    "email": "juandiego@gmail.com",
-    "telefono": "3157853239",
-    "direccion": "Soleri Parque Residencial",
-    "estado": "INSCRITO",
-    "acudiente": "Ana",
-    "numerocont": "3150004433"
+    "numerocont": "3164100075"
   }
 ]
