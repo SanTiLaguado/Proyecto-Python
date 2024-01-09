@@ -1,5 +1,5 @@
 import json
-from businnes.Campers import lista_campers,load_campers_json
+from businnes.Campers import lista_campers,load_campers_json,guardar_json
 
 lista_campers = load_campers_json()
 
@@ -64,8 +64,7 @@ def rutacampers(campers):
             id_buscar = input("Ingrese el número de identificación del camper: ")
             for camper in lista_campers:
                 if camper['identificacion'] == id_buscar:
-                    op2 = int(input("Las rutas disponibles para el camper son las siguientes:\n 1. Ruta NodeJS \n 2. Ruta Java \n 3. Ruta NetCore\n"))
-                while True:
+                    op2 = int(input("Las rutas disponibles para el camper son las siguientes:\n 1. Ruta NodeJS \n 2. Ruta Java \n 3. Ruta NetCore\n Ingrese la opcion que quiere asignar al camper: "))
                     if op2 == 1:
                         camper['rutas'] = 'NodeJS'
                         break
@@ -77,6 +76,7 @@ def rutacampers(campers):
                         break
                 else:
                     print("El camper no se encuentra inscrito")
+guardar_json()
         
 
 

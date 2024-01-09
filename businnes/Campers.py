@@ -21,12 +21,12 @@ def crear_camper():
     email = input("Ingrese el correo electrónico del camper: ")
     telefono = input("Ingrese el número de teléfono del camper: ")
     direccion = input("Ingrese la dirección del camper: ")
-    estado = input("Ingrese el estado del camper: ")
     print("----------- Datos del Acudiente-----------")
     acudiente = input("Ingrese el nombre del acudiente o contacto de emergencia: ")
     numerocont = input("Ingrese el número de teléfono del contacto: ")
     notaprueba = 0
-    rutas = 0
+    rutas = 'inscrito'
+    estado = 'inscrito'
 
     camper = {
         'nombre': nombre,
@@ -75,7 +75,7 @@ def modificar_campers():
     for camper in lista_campers:
         if camper['identificacion'] == id_buscar:
             print(f"ID: {camper['identificacion']}, Nombre: {camper['nombre']} {camper['apellido']}, Edad: {camper['edad']}")
-            opcion = int(input("Seleccione qué campo desea modificar:\n1. ESTADO\n2. Nota prueba ing\n3. Nombre\n4. Apellido\n5. Edad\n6.Email\n7.Telefono\n8.Direccion\n9.SALIR\nIngrese el número de opción: "))
+            opcion = int(input("Seleccione qué campo desea modificar:\n1. ESTADO\n2. Nota prueba ing\n3. Nombre\n4. Apellido\n5. Edad\n6. Email\n7. Telefono\n8. Direccion\n9. SALIR\nIngrese el número de opción: "))
             if opcion == 1:
                 camper['estado'] = input("Ingrese el nuevo ESTADO: ")
             elif opcion == 2:
@@ -101,6 +101,7 @@ def modificar_campers():
         else:
             print("No se encontró ningún camper con ese número de identificación.")
             break
+guardar_json()
 
 def eliminar_campers():
     id_eliminar = input("Ingrese el número de identificación del camper que desea eliminar: ")
@@ -116,3 +117,4 @@ def eliminar_campers():
             return
     else:
         print("No se encontró ningún camper con ese número de identificación.")
+guardar_json()

@@ -4,12 +4,13 @@
     "apellido": "Laguado",
     "identificacion": "1097489826",
     "notaprueba": 0,
+    "rutas": "inscrito",
     "edad": 19,
     "email": "santi.gmail.com",
-    "telefono": "3154797800",
-    "direccion": "calle 36",
-    "estado": "INSCRITO",
-    "acudiente": "clara osorio",
-    "numerocont": "3164100075"
+    "telefono": "3157645002",
+    "direccion": "bga1",
+    "estado": "inscrito",
+    "acudiente": "clara",
+    "numerocont": "3154100075"
   }
 ]
